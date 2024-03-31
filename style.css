@@ -1,0 +1,82 @@
+#cabecalhoTag {
+    grid-area: cabecalhoTag;
+    border: solid #c3cfd9 2px;
+    background-color: #dfe6ed
+}
+
+#doLadoTag {
+    background-color: #dfe6ed;
+
+    grid-area: doLadoTag;
+    border: solid #c3cfd9 2px;
+}
+
+#principalTag {
+    background-color: #edb5bd;
+
+    grid-area: principalTag;
+    border: solid #c3cfd9 2px;
+}
+
+#rodapeTag {
+    background-color: #dfe6ed;
+
+    grid-area: rodapeTag;
+    border: solid #c3cfd9 2px;
+}
+
+#quadradoUm,
+#quadradoDois,
+#quadradoTres,
+#quadradoQuatro {
+    gap: 5px;
+    background-color: #a3dfd9;
+
+
+}
+
+
+body {
+    display: grid;
+
+
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+
+    grid-template-areas:
+        'cabecalhoTag cabecalhoTag'
+        'doLadoTag principalTag'
+        'rodapeTag rodapeTag'
+    ;
+}
+
+main {
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+div {
+    background-color: #d5e7f7;
+    display: flex;
+    margin: 5px;
+    flex-grow: 1;
+
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+article {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    margin: 5px;
+}
