@@ -62,7 +62,8 @@ main {
 }
 
 div {
-    background-color: #d5e7f7;
+    background-color: #d5e7f7
+    ;
     display: flex;
     margin: 5px;
     flex-grow: 1;
@@ -79,4 +80,8 @@ article {
     grid-template-rows: 1fr;
 
     margin: 5px;
+}
+
+p {
+    text-align: center;
 }
